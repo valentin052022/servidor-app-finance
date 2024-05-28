@@ -44,8 +44,8 @@ const obtenerDatosAccion = (accion) => {
 // Ruta para obtener los datos de una acción específica
 app.get("/:accion", async (req, res) => {
   const accion = req.params.accion;
-  res.setHeader("Access-Control-Allow-Origin", "http://localhost:5173"); // Permite el origen de tu servidor de desarrollo
-  res.setHeader("Access-Control-Allow-Methods", "GET"); // Especifica métodos permitidos
+  res.setHeader("Access-Control-Allow-Origin", "https://market-info-vale.netlify.app"); // Permite el origen de tu servidor de desarrollo
+  res.setHeader("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE"); // Especifica métodos permitidos
   res.setHeader("Access-Control-Allow-Headers", "Content-Type, Authorization"); // Permite cabeceras relevantes
   try {
     const data = await obtenerDatosAccion(accion);
