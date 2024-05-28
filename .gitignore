@@ -18,7 +18,7 @@ node_modules/
 *.tgz
 
 # dotenv environment variables file
-.env
+*.env
 
 # Editors and IDEs
 .idea/
