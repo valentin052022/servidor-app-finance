@@ -11,7 +11,7 @@ dotenv.config();
 
 // Crear la aplicación de Express
 const app = express();
-const port = process.env.PORT || 3000;
+const port = 3000;
 
 // Función para obtener los datos de una acción específica
 const obtenerDatosAccion = (accion) => {
